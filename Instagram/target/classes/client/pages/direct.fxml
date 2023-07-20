@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="client.controllers.DirectController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="781.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="nameLBL" alignment="CENTER" contentDisplay="CENTER" layoutY="-2.0" prefHeight="86.0" prefWidth="600.0" text="Name">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="textField" focusColor="BLACK" layoutX="19.0" layoutY="665.0" prefHeight="102.0" prefWidth="451.0" unFocusColor="BLACK" />
+      <JFXButton layoutX="501.0" layoutY="726.0" onAction="#sendAction" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="send" textFill="WHITE" />
+      <JFXListView fx:id="list" layoutX="1.0" layoutY="115.0" prefHeight="513.0" prefWidth="600.0" />
+      <JFXButton layoutX="566.0" layoutY="9.0" onAction="#back" prefHeight="24.0" prefWidth="26.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="-" textFill="WHITE">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

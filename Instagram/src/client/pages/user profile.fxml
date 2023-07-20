@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="client.controllers.UserProfileController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="nameLBL" alignment="TOP_CENTER" layoutX="130.0" layoutY="336.0" prefHeight="59.0" prefWidth="272.0">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profileIMG" fitHeight="281.0" fitWidth="314.0" layoutX="109.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXButton layoutX="14.0" layoutY="595.0" onAction="#backAction" style="-fx-background-color: red;" text="back" textFill="WHITE" />
+      <JFXButton layoutX="188.0" layoutY="559.0" onAction="#postsAction" prefHeight="45.0" prefWidth="157.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="Posts" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

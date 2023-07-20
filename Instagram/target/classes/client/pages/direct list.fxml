@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="client.controllers.DirectListController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="840.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="8.0" prefHeight="634.0" prefWidth="383.0" style="-fx-background-color: #f14d4d;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="461.0" layoutX="40.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="303.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Rectangle>
+            <JFXListView fx:id="list" layoutX="43.0" layoutY="88.0" onMouseClicked="#listClicked" prefHeight="455.0" prefWidth="297.0" />
+            <JFXButton fx:id="msgBTN" buttonType="RAISED" disable="true" layoutX="126.0" layoutY="582.0" onAction="#msgAction" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="messages" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <JFXTextField fx:id="searchField" focusColor="#f14d4d" labelFloat="true" layoutX="420.0" layoutY="144.0" prefHeight="41.0" prefWidth="243.0" promptText="Search username" unFocusColor="#f14d4d">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="696.0" layoutY="157.0" onAction="#sendAction" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #f14d4d; -fx-background-radius: 20;" text="send message" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="696.0" layoutY="610.0" onAction="#menuAction" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #f14d4d; -fx-background-radius: 20;" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

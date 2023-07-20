@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="client.controllers.NotificationController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton layoutX="202.0" layoutY="111.0" onAction="#closeAction" style="-fx-background-color: red; -fx-background-radius: 200;" text="OK" textFill="WHITE" />
+      <Label fx:id="notificationLBL" alignment="CENTER" layoutX="2.0" prefHeight="96.0" prefWidth="445.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="904.0" prefWidth="600.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.UserPostsController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="12.0" prefHeight="883.0" prefWidth="576.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="IMG" fitHeight="341.0" fitWidth="437.0" layoutX="70.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXListView fx:id="comments" layoutX="70.0" layoutY="365.0" prefHeight="204.0" prefWidth="437.0" />
+            <Label fx:id="infoLBL" alignment="TOP_CENTER" layoutX="70.0" layoutY="652.0" prefHeight="163.0" prefWidth="437.0" text="likes : ">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="26.0" layoutY="838.0" onAction="#close" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="close" textFill="WHITE" />
+            <JFXButton layoutX="219.0" layoutY="838.0" onAction="#likeAction" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="like" textFill="WHITE" />
+            <JFXTextField fx:id="commentField" layoutX="71.0" layoutY="568.0" prefHeight="50.0" prefWidth="437.0" />
+            <JFXButton layoutX="428.0" layoutY="837.0" onAction="#commentAction" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="add comment" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

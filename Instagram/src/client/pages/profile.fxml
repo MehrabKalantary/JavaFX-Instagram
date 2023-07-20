@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="client.controllers.ProfileController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="profileIMG" fitHeight="190.0" fitWidth="217.0" layoutX="373.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="nameLBL" alignment="CENTER" layoutX="41.0" layoutY="10.0" prefHeight="64.0" prefWidth="295.0">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="401.0" layoutY="217.0" onAction="#changeBTN" prefHeight="45.0" prefWidth="153.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="change photo" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="23.0" layoutY="211.0" onAction="#followersAction" prefHeight="45.0" prefWidth="153.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="followers" underline="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="23.0" layoutY="269.0" onAction="#followingAction" prefHeight="45.0" prefWidth="153.0" style="-fx-background-color: white; -fx-background-radius: 50;" text="following" underline="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="445.0" layoutY="326.0" onAction="#menuAction" style="-fx-background-color: red;" text="menu" textFill="WHITE" />
+   </children>
+</AnchorPane>

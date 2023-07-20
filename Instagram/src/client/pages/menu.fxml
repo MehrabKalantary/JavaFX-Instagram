@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.MenuController">
+   <children>
+      <JFXButton layoutX="197.0" layoutY="517.0" onAction="#exitAction" prefHeight="57.0" prefWidth="206.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="202.0" onAction="#profileAction" prefHeight="57.0" prefWidth="206.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Profile" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="279.0" onAction="#newPostAction" prefHeight="57.0" prefWidth="206.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="New Post" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="356.0" onAction="#postsAction" prefHeight="57.0" prefWidth="206.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="My Posts" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="197.0" layoutY="437.0" onAction="#directAction" prefHeight="57.0" prefWidth="206.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Direct" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="168.0" layoutY="43.0" prefHeight="57.0" prefWidth="265.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="BlackChancery" size="55.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor" fx:controller="client.controllers.LoginController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="829.0" prefWidth="600.0" style="-fx-background-color: #6A0888;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="396.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/insta.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="usernameField" focusColor="WHITE" labelFloat="true" layoutX="116.0" layoutY="304.0" prefHeight="64.0" prefWidth="369.0" promptText=" username" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordField" focusColor="WHITE" labelFloat="true" layoutX="116.0" layoutY="430.0" prefHeight="64.0" prefWidth="369.0" promptText=" password" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="116.0" layoutY="610.0" onAction="#loginAction" prefHeight="64.0" prefWidth="369.0" style="-fx-background-color: #DF01D7;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="412.0" layoutY="730.0" onAction="#signupAction" prefHeight="64.0" prefWidth="146.0" style="-fx-background-color: #DF01D7;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="116.0" layoutY="730.0" prefHeight="64.0" prefWidth="218.0" text="not a member yer?" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="logLBL" alignment="CENTER" layoutX="116.0" layoutY="523.0" prefHeight="64.0" prefWidth="369.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
